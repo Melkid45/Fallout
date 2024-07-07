@@ -1,0 +1,81 @@
+.comment{
+    width: 100%;
+    margin-top: 60px;
+    padding: 40px 0;
+    background: #0C0D0E;
+    &__body{
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+        align-items: center;
+        &-title{
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            h2{
+                font-size: 26px;
+                font-weight: 400;
+                line-height: 31.71px;
+                text-align: center;
+                color: var(--yellow);
+            }
+            span{
+                font-size: 26px;
+                font-weight: 400;
+                line-height: 31.71px;
+                text-align: center;
+                color: var(--blue);
+            }
+        }
+        &-box{
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            &-item{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                &-user{
+                    display: flex;
+                    gap: 20px;
+                    align-items: flex-start;
+                    img{
+                        width: 60px;
+                        height: 60px;
+                    }
+                    span{
+                        font-size: 18px;
+                        font-weight: 700;
+                        text-align: left;
+                        color: var(--gray);
+                    }
+                    p{
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 21.79px;
+                        text-align: left;
+                        color: var(--gray);
+                    }
+                }
+                &-text{
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 24.51px;
+                    text-align: left;
+                    color: var(--white);
+                }
+                &-answer{
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 19.5px;
+                    text-align: left;
+                    color: var(--white);
+                    text-decoration: underline;
+                    margin-top: 11px;
+                    background: transparent;
+                    max-width: max-content;
+                }
+            }
+        }
+    }
+}

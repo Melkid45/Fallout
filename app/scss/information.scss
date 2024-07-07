@@ -1,0 +1,30 @@
+.information{
+    width: 100%;
+    margin-top: 60px;
+    &__body{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        &-item{
+            padding-left: 30px;
+            border-left: 1px solid var(--blue);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            span{
+                font-size: 26px;
+                font-weight: 400;
+                line-height: 31.71px;
+                text-align: left;
+                color: var(--yellow);
+            }
+            p{
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 24.51px;
+                text-align: left;
+                color: var(--white);
+            }
+        }
+    }
+}

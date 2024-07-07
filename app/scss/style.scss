@@ -1,0 +1,68 @@
+:root{
+    --yellow: #FFD337;
+    --white: #FFFFFF;
+    --blue: #2580EA;
+    --main-bg: #1B1E21;
+    --dark: #333239;
+    --dark-blue: #1D4574;
+    --main-bg-30: #1B1E214D;
+    --hover-link: #282F36;
+    --gray: #7F8A96;
+}
+
+@import './reset';
+html{
+    scroll-behavior: smooth;
+}
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    background: var(--main-bg);
+    font-family: 'Impact', sans-serif;
+    scroll-behavior: smooth;
+}
+.op{
+    font-family: "Open Sans", sans-serif;
+}
+.none{
+    display: none !important;
+}
+.hidden{
+    overflow: hidden;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.sc__top{
+    width: 64px;
+    height: 64px;
+    position: fixed;
+    bottom: 100px;
+    right: 300px;
+    background: transparent;
+    opacity: 0;
+    transition: all 0.5s ease;
+    z-index: 100;
+    img{
+        width: 64px;
+        height: 64px;
+    }
+}
+.sc__top.active{
+    opacity: 1;
+}
+.pd-bt{
+    padding-bottom: 60px;
+}
+
+.comment.change{
+    background: transparent !important;
+    .comment__body-title{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    padding: 0 0 40px 0;
+}

@@ -1,0 +1,99 @@
+.info{
+    width: 100%;
+    padding: 40px;
+    background: #0C0D0E;
+    &__body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        &-title{
+            font-size: 26px;
+            font-weight: 400;
+            line-height: 31.71px;
+            text-align: left;
+            color: var(--yellow);
+        }
+        &-box{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            &-char{
+                width: 100%;
+                max-width: 335px;
+                display: flex;
+                flex-direction: column;
+                gap: 19px;
+                &-item{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                    span{
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 24.51px;
+                        text-align: left;
+                        color: var(--gray);
+                    }
+                    p{
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 18px;
+                        font-style: italic;
+                        font-weight: 600;
+                        line-height: 24.51px;
+                        text-align: left;
+                        color: var(--white);
+                    }
+                }
+                &-item:nth-child(1){
+                    p{
+                        color: var(--blue);
+                    }
+                }
+            }
+            &-tag{
+                max-width: 489px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                &-item{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                    span{
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 24.51px;
+                        text-align: left;
+                        color: var(--gray);
+                    }
+                    &-desc{
+                        display: flex;
+                        flex-wrap: wrap;
+                        width: 100%;
+                        gap: 10px;
+                        p{
+                            padding: 4px 13px;
+                            background: var(--dark);
+                            border-radius: 4px;
+                            font-family: 'Open Sans', sans-serif;
+                            font-size: 18px;
+                            font-style: italic;
+                            font-weight: 600;
+                            line-height: 24.51px;
+                            text-align: left;
+                            color: var(--white);
+                        }
+                    }
+                }
+            }
+            img{
+                width: 305px;
+                height: 419px;
+            }
+        }
+    }
+}
