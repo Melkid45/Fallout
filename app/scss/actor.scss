@@ -26,7 +26,7 @@
                 width: 247px;
                 height: 370px;
                 border-radius: 6px;
-                transition: all 0.5s ease;
+                transition: all 0.3s ease;
                 cursor: pointer;
                 img{
                     width: 247px;
@@ -45,7 +45,7 @@
                     text-align: center;
                     color: var(--white);
                     z-index: 11;
-                    transition: all 0.5s ease;
+                    transition: all 0.3s ease;
                 }
             }
             &-item:hover{

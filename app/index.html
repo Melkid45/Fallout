@@ -9,221 +9,779 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/impact" rel="stylesheet">
-    <link rel="stylesheet" href="../scss/style.min.css">
+    <link rel="stylesheet" href="scss/style.min.css">
     <title>Fallout</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__body">
-                <a href="main.html" class="header__body-logo">
-                    <img src="../images/dist/header__logo.png" alt="">
-                </a>
-                <nav class="header__body-menu">
-                    <ul class="header__body-menu-links">
-                        <li class="header__body-menu-links-item">
-                            <a href="main.html">Главная</a>
-                        </li>
-                        <li class="header__body-menu-links-item">
-                            <a href="">
-                                Выбрать сезон
-                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.6449 9C18.3619 9 18.079 9.07964 17.8631 9.23946L12.75 13.025L7.63692 9.23946C7.20512 8.92036 6.5051 8.92036 6.0733 9.23946C5.64223 9.5591 5.64223 10.0773 6.0733 10.3969L11.9682 14.7607C12.4 15.0798 13.1 15.0798 13.5318 14.7607L19.4267 10.3969C19.8578 10.0773 19.8578 9.5591 19.4267 9.23946C19.2108 9.07964 18.9278 9 18.6449 9Z" fill="white"/>
-                                </svg>                                
-                            </a>
-                        </li>
-                        <li class="header__body-menu-links-item">
-                            <a href="actor.html">Актёры</a>
-                        </li>
-                        <li class="header__body-menu-links-item">
-                            <a href="news.html">Новости</a>
-                        </li>
-                        <li class="header__body-menu-links-item">
-                            <a href="">«Иерихон»</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <!-- <div class="header__mobile mob">
-                <div class="header__mobile-top">
+    <div class="season__wrap">
+        <img class="s__img desk" src="images/dist/s__img.png" alt="">
+        <img class="s__img mob" src="images/dist/s__img-mob.png" alt="">
+        <header class="header">
+            <div class="container">
+                <div class="header__body desk">
                     <a href="main.html" class="header__body-logo">
-                        <img src="../images/dist/header__logo.png" alt="">
-                    </a>
-                    <div class="burger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-                <div class="header__mobile-bot">
-                    <a href="main.html" class="header__body-logo">
-                        <img src="../images/dist/header__logo.png" alt="">
+                        <img src="images/dist/header__logo.png" alt="">
                     </a>
                     <nav class="header__body-menu">
                         <ul class="header__body-menu-links">
                             <li class="header__body-menu-links-item">
-                                <a href="main.html">Главная</a>
+                                <a class="hover" href="main.html">Главная</a>
                             </li>
-                            <li class="header__body-menu-links-item">
-                                <a href="">
+                            <li class="header__body-menu-links-item acc">
+                                <div class="hover">
                                     Выбрать сезон
                                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M18.6449 9C18.3619 9 18.079 9.07964 17.8631 9.23946L12.75 13.025L7.63692 9.23946C7.20512 8.92036 6.5051 8.92036 6.0733 9.23946C5.64223 9.5591 5.64223 10.0773 6.0733 10.3969L11.9682 14.7607C12.4 15.0798 13.1 15.0798 13.5318 14.7607L19.4267 10.3969C19.8578 10.0773 19.8578 9.5591 19.4267 9.23946C19.2108 9.07964 18.9278 9 18.6449 9Z" fill="white"/>
                                     </svg>                                
-                                </a>
+                                </div>
+                                <div class="header__body-menu-links-item-acc">
+                                    <a href="" class="op">1 сезон</a>
+                                    <a href="" class="op">2 сезон</a>
+                                    <a href="" class="op">3 сезон</a>
+                                </div>
                             </li>
                             <li class="header__body-menu-links-item">
-                                <a href="actor.html">Актёры</a>
+                                <a class="hover" href="actor.html">Актёры</a>
                             </li>
                             <li class="header__body-menu-links-item">
-                                <a href="news.html">Новости</a>
+                                <a class="hover" href="news.html">Новости</a>
                             </li>
                             <li class="header__body-menu-links-item">
-                                <a href="">«Иерихон»</a>
+                                <a class="hover" href="">«Иерихон»</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
-            </div> -->
-        </div>
-    </header>
-    <section class="new">
+                <div class="header__mobile mob">
+                    <div class="header__mobile-top">
+                        <a href="main.html" class="header__mobile-top-logo">
+                            <img src="images/dist/header__logo.png" alt="">
+                        </a>
+                        <div class="burger">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35 10H5" stroke="#2580EA" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M35 20H15" stroke="#2580EA" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M35 30L11 30" stroke="#2580EA" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                            
+                        </div>
+                    </div>
+                    <div class="header__mobile-bot">
+                        <button class="close">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M30 10L10 30" stroke="#2580EA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 10L30 30" stroke="#2580EA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                            
+                        </button>
+                        <a href="main.html" class="header__body-logo">
+                            <img src="images/dist/header__logo.png" alt="">
+                        </a>
+                        <nav class="header__body-menu">
+                            <ul class="header__body-menu-links">
+                                <li class="header__body-menu-links-item">
+                                    <a class="hover" href="main.html">Главная</a>
+                                </li>
+                                <li class="header__body-menu-links-item acc">
+                                    <div class="hover">
+                                        Выбрать сезон
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.6449 9C18.3619 9 18.079 9.07964 17.8631 9.23946L12.75 13.025L7.63692 9.23946C7.20512 8.92036 6.5051 8.92036 6.0733 9.23946C5.64223 9.5591 5.64223 10.0773 6.0733 10.3969L11.9682 14.7607C12.4 15.0798 13.1 15.0798 13.5318 14.7607L19.4267 10.3969C19.8578 10.0773 19.8578 9.5591 19.4267 9.23946C19.2108 9.07964 18.9278 9 18.6449 9Z" fill="white"/>
+                                        </svg>                                
+                                    </div>
+                                    <div class="header__body-menu-links-item-acc">
+                                        <a href="" class="op">1 сезон</a>
+                                        <a href="" class="op">2 сезон</a>
+                                        <a href="" class="op">3 сезон</a>
+                                    </div>
+                                </li>
+                                <li class="header__body-menu-links-item">
+                                    <a class="hover" href="actor.html">Актёры</a>
+                                </li>
+                                <li class="header__body-menu-links-item">
+                                    <a class="hover" href="news.html">Новости</a>
+                                </li>
+                                <li class="header__body-menu-links-item">
+                                    <a class="hover" href="">«Иерихон»</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <section class="season">
         <div class="container">
-            <div class="new__body">
-                <div class="new__body-soft">
+            <div class="season__body">
+                <div class="season__body-title">
                     <span class="op">Фоллаут</span>
                     <p class="op">/</p>
-                    <p class="op">Новости</p>
+                    <p class="op">1 сезон</p>
                 </div>
-                <h2 class="new__body-title">
-                    Новости
-                </h2>
-                <div class="new__body-box">
-                    <a href="" class="new__body-box-item">
-                        <div class="new__body-box-item-top">
-                            <img src="../images/dist/news/2.png" alt="">
-                            <span class="op">НОВОСТИ И ФАКТЫ СЕРИАЛА ФОЛЛАУТ "FALLOUT" 2024</span>
-                        </div>
-                        <div class="new__body-box-item-bot">
-                            <div class="new__body-box-item-bot-date">
-                                <p class="op">12 ноября 2023</p>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9 3.57H17C19.7614 3.57 22 5.80858 22 8.57V17.57C22 20.3314 19.7614 22.57 17 22.57H7C5.67392 22.57 4.40215 22.0432 3.46447 21.1055C2.52678 20.1679 2 18.8961 2 17.57V8.57C2 5.80858 4.23858 3.57 7 3.57H7.1V1.75C7.1 1.33579 7.43579 1 7.85 1C8.26421 1 8.6 1.33579 8.6 1.75V3.57H15.4V1.75C15.4 1.33579 15.7358 1 16.15 1C16.5642 1 16.9 1.33579 16.9 1.75V3.57ZM7.5 9.66H16.5C16.9142 9.66 17.25 9.32421 17.25 8.91C17.25 8.49579 16.9142 8.16 16.5 8.16H7.5C7.08579 8.16 6.75 8.49579 6.75 8.91C6.75 9.32421 7.08579 9.66 7.5 9.66Z" fill="#7F8A96"/>
-                                </svg>                                
+                <div class="season__body-box">
+                    <img src="images/dist/sea__img.png" alt="">
+                    <div class="season__body-box-text">
+                        <div class="season__body-box-text-social">
+                            <span class="season__body-box-text-social-name">Фоллаут</span>
+                            <div class="season__body-box-text-social-block">
+                                <a href="" class="season__body-box-text-social-block-item">
+                                    <span class="op">Поделиться</span>
+                                    <p class="op">(25)</p>
+                                </a>
+                                <button class="season__body-box-text-social-block-item">
+                                    <svg width="23" height="15" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.3825 14.5C4.86598 14.5 0.578663 9.24474 0.400024 0.5H4.16517C4.28884 6.91842 7.06461 9.63714 9.26324 10.1977V0.5H12.8085V6.03553C14.9797 5.7973 17.2607 3.27477 18.0303 0.5H21.5755C21.2856 1.93908 20.7075 3.30165 19.8776 4.5025C19.0477 5.70335 17.9838 6.71663 16.7523 7.47898C18.1269 8.17555 19.341 9.1615 20.3145 10.3717C21.2881 11.582 21.9989 12.989 22.4 14.5H18.4975C18.1373 13.1876 17.4054 12.0128 16.3934 11.1228C15.3814 10.2328 14.1344 9.66727 12.8085 9.497V14.5H12.3825Z" fill="white"/>
+                                    </svg>                                    
+                                    <span class="op desk">Поделиться</span>
+                                </button>
+                                <button class="season__body-box-text-social-block-item">
+                                    <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20 2.60019C19.3 2.90019 18.5 3.1002 17.7 3.2002C18.5 2.7002 19.2 1.9002 19.5 1.0002C18.7 1.5002 17.9 1.8002 16.9 2.0002C16.2 1.2002 15.1 0.700195 14 0.700195C11.8 0.700195 10 2.5002 10 4.7002C10 5.0002 10 5.30019 10.1 5.60019C6.80002 5.40019 3.80002 3.80019 1.80002 1.40019C1.50002 2.00019 1.30002 2.70019 1.30002 3.40019C1.30002 4.80019 2.00002 6.0002 3.10002 6.7002C2.40002 6.7002 1.80002 6.5002 1.30002 6.2002C1.30002 8.1002 2.70002 9.80019 4.50002 10.1002C4.20002 10.2002 3.80002 10.2002 3.40002 10.2002C3.10002 10.2002 2.90002 10.2002 2.60002 10.1002C3.10002 11.7002 4.60002 12.9002 6.40002 12.9002C5.00002 14.0002 3.30002 14.6002 1.40002 14.6002C1.10002 14.6002 0.800024 14.6002 0.400024 14.5002C2.20002 15.6002 4.30002 16.3002 6.60002 16.3002C14 16.3002 18 10.2002 18 4.90019V4.40019C18.8 4.10019 19.5 3.40019 20 2.60019Z" fill="white"/>
+                                    </svg>    
+                                    <span class="op desk">Твитнуть</span>
+                                </button>
+                                <button class="season__body-box-text-social-block-item">
+                                    <svg width="8" height="17" viewBox="0 0 8 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.10472 9.13921H7.58617L7.97578 6.32736H5.10421V4.79056C5.10421 3.62247 5.44638 2.58668 6.42594 2.58668H8V0.132852C7.72344 0.0911951 7.13853 0 6.03331 0C3.72546 0 2.37245 1.35948 2.37245 4.45674V6.32736H0V9.13921H2.37245V16.8677C2.84229 16.9465 3.31819 17 3.80671 17C4.2483 17 4.67928 16.955 5.10472 16.8908V9.13921Z" fill="white"/>
+                                    </svg>                                    
+                                    <span class="op desk">Поделиться</span>
+                                </button>
                             </div>
-                            <p class="op new__body-box-item-bot-desc">Специально для тех, кто не знал - "Fallout" переводится с английского как выпадение радиоактивных осадков. Amazon наконец-то предоставил большой публике кадры из их нового сериала "Fallout".</p>
                         </div>
-                    </a>
-                    <a href="" class="new__body-box-item">
-                        <div class="new__body-box-item-top">
-                            <img src="../images/dist/news/2.png" alt="">
-                            <span class="op">НОВОСТИ И ФАКТЫ СЕРИАЛА ФОЛЛАУТ "FALLOUT" 2024</span>
-                        </div>
-                        <div class="new__body-box-item-bot">
-                            <div class="new__body-box-item-bot-date">
-                                <p class="op">12 ноября 2023</p>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9 3.57H17C19.7614 3.57 22 5.80858 22 8.57V17.57C22 20.3314 19.7614 22.57 17 22.57H7C5.67392 22.57 4.40215 22.0432 3.46447 21.1055C2.52678 20.1679 2 18.8961 2 17.57V8.57C2 5.80858 4.23858 3.57 7 3.57H7.1V1.75C7.1 1.33579 7.43579 1 7.85 1C8.26421 1 8.6 1.33579 8.6 1.75V3.57H15.4V1.75C15.4 1.33579 15.7358 1 16.15 1C16.5642 1 16.9 1.33579 16.9 1.75V3.57ZM7.5 9.66H16.5C16.9142 9.66 17.25 9.32421 17.25 8.91C17.25 8.49579 16.9142 8.16 16.5 8.16H7.5C7.08579 8.16 6.75 8.49579 6.75 8.91C6.75 9.32421 7.08579 9.66 7.5 9.66Z" fill="#7F8A96"/>
-                                </svg>                                
+                        <div class="season__body-box-text-rate">
+                            <div class="season__body-box-text-rate-star">
+                                <img src="images/dist/star1.png" alt="">
+                                <img src="images/dist/star1.png" alt="">
+                                <img src="images/dist/star1.png" alt="">
+                                <img src="images/dist/star1.png" alt="">
+                                <img src="images/dist/star1.png" alt="">
+                                <img src="images/dist/star1.png" alt="">
+                                <img src="images/dist/star1.png" alt="">
+                                <img src="images/dist/star1.png" alt="">
+                                <img src="images/dist/star2.png" alt="">
+                                <img src="images/dist/star2.png" alt="">
                             </div>
-                            <p class="op new__body-box-item-bot-desc">Специально для тех, кто не знал - "Fallout" переводится с английского как выпадение радиоактивных осадков. Amazon наконец-то предоставил большой публике кадры из их нового сериала "Fallout".</p>
+                            <p class="op">83 голоса</p>
                         </div>
-                    </a>
-                    <a href="" class="new__body-box-item">
-                        <div class="new__body-box-item-top">
-                            <img src="../images/dist/news/2.png" alt="">
-                            <span class="op">НОВОСТИ И ФАКТЫ СЕРИАЛА ФОЛЛАУТ "FALLOUT" 2024</span>
-                        </div>
-                        <div class="new__body-box-item-bot">
-                            <div class="new__body-box-item-bot-date">
-                                <p class="op">12 ноября 2023</p>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9 3.57H17C19.7614 3.57 22 5.80858 22 8.57V17.57C22 20.3314 19.7614 22.57 17 22.57H7C5.67392 22.57 4.40215 22.0432 3.46447 21.1055C2.52678 20.1679 2 18.8961 2 17.57V8.57C2 5.80858 4.23858 3.57 7 3.57H7.1V1.75C7.1 1.33579 7.43579 1 7.85 1C8.26421 1 8.6 1.33579 8.6 1.75V3.57H15.4V1.75C15.4 1.33579 15.7358 1 16.15 1C16.5642 1 16.9 1.33579 16.9 1.75V3.57ZM7.5 9.66H16.5C16.9142 9.66 17.25 9.32421 17.25 8.91C17.25 8.49579 16.9142 8.16 16.5 8.16H7.5C7.08579 8.16 6.75 8.49579 6.75 8.91C6.75 9.32421 7.08579 9.66 7.5 9.66Z" fill="#7F8A96"/>
-                                </svg>                                
+                        <div class="season__body-box-text-char">
+                            <div class="season__body-box-text-char-start">
+                                <div class="season__body-box-text-char-start-item">
+                                    <span class="op">КП</span>
+                                    <p class="op"> - 8,7</p>
+                                </div>
+                                <div class="season__body-box-text-char-start-item">
+                                    <span class="op">IMDB</span>
+                                    <p class="op"> - 8,7</p>
+                                </div>
                             </div>
-                            <p class="op new__body-box-item-bot-desc">Специально для тех, кто не знал - "Fallout" переводится с английского как выпадение радиоактивных осадков. Amazon наконец-то предоставил большой публике кадры из их нового сериала "Fallout".</p>
-                        </div>
-                    </a>
-                    <a href="" class="new__body-box-item">
-                        <div class="new__body-box-item-top">
-                            <img src="../images/dist/news/2.png" alt="">
-                            <span class="op">НОВОСТИ И ФАКТЫ СЕРИАЛА ФОЛЛАУТ "FALLOUT" 2024</span>
-                        </div>
-                        <div class="new__body-box-item-bot">
-                            <div class="new__body-box-item-bot-date">
-                                <p class="op">12 ноября 2023</p>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9 3.57H17C19.7614 3.57 22 5.80858 22 8.57V17.57C22 20.3314 19.7614 22.57 17 22.57H7C5.67392 22.57 4.40215 22.0432 3.46447 21.1055C2.52678 20.1679 2 18.8961 2 17.57V8.57C2 5.80858 4.23858 3.57 7 3.57H7.1V1.75C7.1 1.33579 7.43579 1 7.85 1C8.26421 1 8.6 1.33579 8.6 1.75V3.57H15.4V1.75C15.4 1.33579 15.7358 1 16.15 1C16.5642 1 16.9 1.33579 16.9 1.75V3.57ZM7.5 9.66H16.5C16.9142 9.66 17.25 9.32421 17.25 8.91C17.25 8.49579 16.9142 8.16 16.5 8.16H7.5C7.08579 8.16 6.75 8.49579 6.75 8.91C6.75 9.32421 7.08579 9.66 7.5 9.66Z" fill="#7F8A96"/>
-                                </svg>                                
+                            <div class="season__body-box-text-char-end">
+                                <span class="op">2023</span>
+                                <span class="op">|</span>
+                                <span class="op">1 сезон</span>
+                                <span class="op">|</span>
+                                <span class="op">Фантастика</span>
+                                <span class="op">|</span>
+                                <span class="op">Америка</span>
                             </div>
-                            <p class="op new__body-box-item-bot-desc">Специально для тех, кто не знал - "Fallout" переводится с английского как выпадение радиоактивных осадков. Amazon наконец-то предоставил большой публике кадры из их нового сериала "Fallout".</p>
                         </div>
-                    </a>
-                    <a href="" class="new__body-box-item">
-                        <div class="new__body-box-item-top">
-                            <img src="../images/dist/news/2.png" alt="">
-                            <span class="op">НОВОСТИ И ФАКТЫ СЕРИАЛА ФОЛЛАУТ "FALLOUT" 2024</span>
+                        <div class="season__body-box-text-info">
+                            <span>Сюжет 1 сезона</span>
+                            <p class="op">Мир погрузился в мрачную реальность ядерного постапокалипсиса. Выжили немногие — те люди, что укрылись в особых бункерах и других относительно безопасных местах. Судьба остальных оказалась незавидной. Те, кому повезло не умереть, стали гулями, радиоактивными монстрами. <br><br>Спустя 200 с лишним лет двери Убежищ наконец открылись, и началась новая эра человечества</p>
                         </div>
-                        <div class="new__body-box-item-bot">
-                            <div class="new__body-box-item-bot-date">
-                                <p class="op">12 ноября 2023</p>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9 3.57H17C19.7614 3.57 22 5.80858 22 8.57V17.57C22 20.3314 19.7614 22.57 17 22.57H7C5.67392 22.57 4.40215 22.0432 3.46447 21.1055C2.52678 20.1679 2 18.8961 2 17.57V8.57C2 5.80858 4.23858 3.57 7 3.57H7.1V1.75C7.1 1.33579 7.43579 1 7.85 1C8.26421 1 8.6 1.33579 8.6 1.75V3.57H15.4V1.75C15.4 1.33579 15.7358 1 16.15 1C16.5642 1 16.9 1.33579 16.9 1.75V3.57ZM7.5 9.66H16.5C16.9142 9.66 17.25 9.32421 17.25 8.91C17.25 8.49579 16.9142 8.16 16.5 8.16H7.5C7.08579 8.16 6.75 8.49579 6.75 8.91C6.75 9.32421 7.08579 9.66 7.5 9.66Z" fill="#7F8A96"/>
-                                </svg>                                
-                            </div>
-                            <p class="op new__body-box-item-bot-desc">Специально для тех, кто не знал - "Fallout" переводится с английского как выпадение радиоактивных осадков. Amazon наконец-то предоставил большой публике кадры из их нового сериала "Fallout".</p>
-                        </div>
-                    </a>
-                    <a href="" class="new__body-box-item">
-                        <div class="new__body-box-item-top">
-                            <img src="../images/dist/news/2.png" alt="">
-                            <span class="op">НОВОСТИ И ФАКТЫ СЕРИАЛА ФОЛЛАУТ "FALLOUT" 2024</span>
-                        </div>
-                        <div class="new__body-box-item-bot">
-                            <div class="new__body-box-item-bot-date">
-                                <p class="op">12 ноября 2023</p>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9 3.57H17C19.7614 3.57 22 5.80858 22 8.57V17.57C22 20.3314 19.7614 22.57 17 22.57H7C5.67392 22.57 4.40215 22.0432 3.46447 21.1055C2.52678 20.1679 2 18.8961 2 17.57V8.57C2 5.80858 4.23858 3.57 7 3.57H7.1V1.75C7.1 1.33579 7.43579 1 7.85 1C8.26421 1 8.6 1.33579 8.6 1.75V3.57H15.4V1.75C15.4 1.33579 15.7358 1 16.15 1C16.5642 1 16.9 1.33579 16.9 1.75V3.57ZM7.5 9.66H16.5C16.9142 9.66 17.25 9.32421 17.25 8.91C17.25 8.49579 16.9142 8.16 16.5 8.16H7.5C7.08579 8.16 6.75 8.49579 6.75 8.91C6.75 9.32421 7.08579 9.66 7.5 9.66Z" fill="#7F8A96"/>
-                                </svg>                                
-                            </div>
-                            <p class="op new__body-box-item-bot-desc">Специально для тех, кто не знал - "Fallout" переводится с английского как выпадение радиоактивных осадков. Amazon наконец-то предоставил большой публике кадры из их нового сериала "Fallout".</p>
-                        </div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <section class="series">
+        <div class="container">
+            <div class="series__body">
+                <h2 class="series__body-title">
+                    Все сезоны сериала
+                </h2>
+                <div class="series__body-tab">
+                    <span class="series__body-tab-item active" data-tab="1">
+                        1 сезон
+                    </span>
+                    <span class="series__body-tab-item" data-tab="2">
+                        2 сезон
+                    </span>
+                    <span class="series__body-tab-item" data-tab="3">
+                        3 сезон
+                    </span>
+                </div>
+                <div class="series__body-box" data-tab="1">
+                    <div class="series__body-box-item">
+                        <div class="blur">
+                            <div class="circle">
+                                <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3899 8.18875L17.8352 12.19C18.3806 12.5908 18.3786 13.4064 17.8312 13.8046L3.33817 24.345C2.6772 24.8257 1.75 24.3535 1.75 23.5362L1.75 2.45143C1.75 1.63648 2.67252 1.16374 3.33404 1.6397L8.09301 5.06375" stroke="white" stroke-width="2"/>
+                                </svg>                                
+                            </div>
+                        </div>
+                        <img src="images/dist/series/1.png" alt="">
+                        <div class="series__body-box-item-text">
+                            <p class="op">Конец</p>
+                            <div class="series__body-box-item-text-soft">
+                                <span>Сезон 1</span>
+                                <span>Серия 1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="series__body-box-item">
+                        <div class="blur">
+                            <div class="circle">
+                                <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3899 8.18875L17.8352 12.19C18.3806 12.5908 18.3786 13.4064 17.8312 13.8046L3.33817 24.345C2.6772 24.8257 1.75 24.3535 1.75 23.5362L1.75 2.45143C1.75 1.63648 2.67252 1.16374 3.33404 1.6397L8.09301 5.06375" stroke="white" stroke-width="2"/>
+                                </svg>                                
+                            </div>
+                        </div>
+                        <img src="images/dist/series/2.png" alt="">
+                        <div class="series__body-box-item-text">
+                            <p class="op">Цель</p>
+                            <div class="series__body-box-item-text-soft">
+                                <span>Сезон 1</span>
+                                <span>Серия 1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="series__body-box-item">
+                        <div class="blur">
+                            <div class="circle">
+                                <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3899 8.18875L17.8352 12.19C18.3806 12.5908 18.3786 13.4064 17.8312 13.8046L3.33817 24.345C2.6772 24.8257 1.75 24.3535 1.75 23.5362L1.75 2.45143C1.75 1.63648 2.67252 1.16374 3.33404 1.6397L8.09301 5.06375" stroke="white" stroke-width="2"/>
+                                </svg>                                
+                            </div>
+                        </div>
+                        <img src="images/dist/series/3.png" alt="">
+                        <div class="series__body-box-item-text">
+                            <p class="op">Голова</p>
+                            <div class="series__body-box-item-text-soft">
+                                <span>Сезон 1</span>
+                                <span>Серия 1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="series__body-box-item">
+                        <div class="blur">
+                            <div class="circle">
+                                <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3899 8.18875L17.8352 12.19C18.3806 12.5908 18.3786 13.4064 17.8312 13.8046L3.33817 24.345C2.6772 24.8257 1.75 24.3535 1.75 23.5362L1.75 2.45143C1.75 1.63648 2.67252 1.16374 3.33404 1.6397L8.09301 5.06375" stroke="white" stroke-width="2"/>
+                                </svg>                                
+                            </div>
+                        </div>
+                        <img src="images/dist/series/4.png" alt="">
+                        <div class="series__body-box-item-text">
+                            <p class="op">Упыри</p>
+                            <div class="series__body-box-item-text-soft">
+                                <span>Сезон 1</span>
+                                <span>Серия 1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="series__body-box-item">
+                        <div class="blur">
+                            <div class="circle">
+                                <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3899 8.18875L17.8352 12.19C18.3806 12.5908 18.3786 13.4064 17.8312 13.8046L3.33817 24.345C2.6772 24.8257 1.75 24.3535 1.75 23.5362L1.75 2.45143C1.75 1.63648 2.67252 1.16374 3.33404 1.6397L8.09301 5.06375" stroke="white" stroke-width="2"/>
+                                </svg>                                
+                            </div>
+                        </div>
+                        <img src="images/dist/series/5.png" alt="">
+                        <div class="series__body-box-item-text">
+                            <p class="op">Прошлое</p>
+                            <div class="series__body-box-item-text-soft">
+                                <span>Сезон 1</span>
+                                <span>Серия 1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="series__body-box-item">
+                        <div class="blur">
+                            <div class="circle">
+                                <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3899 8.18875L17.8352 12.19C18.3806 12.5908 18.3786 13.4064 17.8312 13.8046L3.33817 24.345C2.6772 24.8257 1.75 24.3535 1.75 23.5362L1.75 2.45143C1.75 1.63648 2.67252 1.16374 3.33404 1.6397L8.09301 5.06375" stroke="white" stroke-width="2"/>
+                                </svg>                                
+                            </div>
+                        </div>
+                        <img src="images/dist/series/6.png" alt="">
+                        <div class="series__body-box-item-text">
+                            <p class="op">Ловушка</p>
+                            <div class="series__body-box-item-text-soft">
+                                <span>Сезон 1</span>
+                                <span>Серия 1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="series__body-box-item">
+                        <div class="blur">
+                            <div class="circle">
+                                <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3899 8.18875L17.8352 12.19C18.3806 12.5908 18.3786 13.4064 17.8312 13.8046L3.33817 24.345C2.6772 24.8257 1.75 24.3535 1.75 23.5362L1.75 2.45143C1.75 1.63648 2.67252 1.16374 3.33404 1.6397L8.09301 5.06375" stroke="white" stroke-width="2"/>
+                                </svg>                                
+                            </div>
+                        </div>
+                        <img src="images/dist/series/7.png" alt="">
+                        <div class="series__body-box-item-text">
+                            <p class="op">Радио</p>
+                            <div class="series__body-box-item-text-soft">
+                                <span>Сезон 1</span>
+                                <span>Серия 1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="series__body-box-item">
+                        <div class="blur">
+                            <div class="circle">
+                                <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3899 8.18875L17.8352 12.19C18.3806 12.5908 18.3786 13.4064 17.8312 13.8046L3.33817 24.345C2.6772 24.8257 1.75 24.3535 1.75 23.5362L1.75 2.45143C1.75 1.63648 2.67252 1.16374 3.33404 1.6397L8.09301 5.06375" stroke="white" stroke-width="2"/>
+                                </svg>                                
+                            </div>
+                        </div>
+                        <img src="images/dist/series/8.png" alt="">
+                        <div class="series__body-box-item-text">
+                            <p class="op">Начало</p>
+                            <div class="series__body-box-item-text-soft">
+                                <span>Сезон 1</span>
+                                <span>Серия 1</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="series__body-box none" data-tab="2">
+                    <div class="series__body-box-item">
+                        <div class="blur">
+                            <div class="circle">
+                                <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3899 8.18875L17.8352 12.19C18.3806 12.5908 18.3786 13.4064 17.8312 13.8046L3.33817 24.345C2.6772 24.8257 1.75 24.3535 1.75 23.5362L1.75 2.45143C1.75 1.63648 2.67252 1.16374 3.33404 1.6397L8.09301 5.06375" stroke="white" stroke-width="2"/>
+                                </svg>                                
+                            </div>
+                        </div>
+                        <img src="images/dist/series/1.png" alt="">
+                        <div class="series__body-box-item-text">
+                            <p class="op">Конец</p>
+                            <div class="series__body-box-item-text-soft">
+                                <span>Сезон 1</span>
+                                <span>Серия 1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="series__body-box-item">
+                        <div class="blur">
+                            <div class="circle">
+                                <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3899 8.18875L17.8352 12.19C18.3806 12.5908 18.3786 13.4064 17.8312 13.8046L3.33817 24.345C2.6772 24.8257 1.75 24.3535 1.75 23.5362L1.75 2.45143C1.75 1.63648 2.67252 1.16374 3.33404 1.6397L8.09301 5.06375" stroke="white" stroke-width="2"/>
+                                </svg>                                
+                            </div>
+                        </div>
+                        <img src="images/dist/series/2.png" alt="">
+                        <div class="series__body-box-item-text">
+                            <p class="op">Цель</p>
+                            <div class="series__body-box-item-text-soft">
+                                <span>Сезон 1</span>
+                                <span>Серия 1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="series__body-box-item">
+                        <div class="blur">
+                            <div class="circle">
+                                <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3899 8.18875L17.8352 12.19C18.3806 12.5908 18.3786 13.4064 17.8312 13.8046L3.33817 24.345C2.6772 24.8257 1.75 24.3535 1.75 23.5362L1.75 2.45143C1.75 1.63648 2.67252 1.16374 3.33404 1.6397L8.09301 5.06375" stroke="white" stroke-width="2"/>
+                                </svg>                                
+                            </div>
+                        </div>
+                        <img src="images/dist/series/3.png" alt="">
+                        <div class="series__body-box-item-text">
+                            <p class="op">Голова</p>
+                            <div class="series__body-box-item-text-soft">
+                                <span>Сезон 1</span>
+                                <span>Серия 1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="series__body-box-item">
+                        <div class="blur">
+                            <div class="circle">
+                                <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3899 8.18875L17.8352 12.19C18.3806 12.5908 18.3786 13.4064 17.8312 13.8046L3.33817 24.345C2.6772 24.8257 1.75 24.3535 1.75 23.5362L1.75 2.45143C1.75 1.63648 2.67252 1.16374 3.33404 1.6397L8.09301 5.06375" stroke="white" stroke-width="2"/>
+                                </svg>                                
+                            </div>
+                        </div>
+                        <img src="images/dist/series/4.png" alt="">
+                        <div class="series__body-box-item-text">
+                            <p class="op">Упыри</p>
+                            <div class="series__body-box-item-text-soft">
+                                <span>Сезон 1</span>
+                                <span>Серия 1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="series__body-box-item">
+                        <div class="blur">
+                            <div class="circle">
+                                <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3899 8.18875L17.8352 12.19C18.3806 12.5908 18.3786 13.4064 17.8312 13.8046L3.33817 24.345C2.6772 24.8257 1.75 24.3535 1.75 23.5362L1.75 2.45143C1.75 1.63648 2.67252 1.16374 3.33404 1.6397L8.09301 5.06375" stroke="white" stroke-width="2"/>
+                                </svg>                                
+                            </div>
+                        </div>
+                        <img src="images/dist/series/5.png" alt="">
+                        <div class="series__body-box-item-text">
+                            <p class="op">Прошлое</p>
+                            <div class="series__body-box-item-text-soft">
+                                <span>Сезон 1</span>
+                                <span>Серия 1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="series__body-box-item">
+                        <div class="blur">
+                            <div class="circle">
+                                <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3899 8.18875L17.8352 12.19C18.3806 12.5908 18.3786 13.4064 17.8312 13.8046L3.33817 24.345C2.6772 24.8257 1.75 24.3535 1.75 23.5362L1.75 2.45143C1.75 1.63648 2.67252 1.16374 3.33404 1.6397L8.09301 5.06375" stroke="white" stroke-width="2"/>
+                                </svg>                                
+                            </div>
+                        </div>
+                        <img src="images/dist/series/6.png" alt="">
+                        <div class="series__body-box-item-text">
+                            <p class="op">Ловушка</p>
+                            <div class="series__body-box-item-text-soft">
+                                <span>Сезон 1</span>
+                                <span>Серия 1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="series__body-box-item">
+                        <div class="blur">
+                            <div class="circle">
+                                <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3899 8.18875L17.8352 12.19C18.3806 12.5908 18.3786 13.4064 17.8312 13.8046L3.33817 24.345C2.6772 24.8257 1.75 24.3535 1.75 23.5362L1.75 2.45143C1.75 1.63648 2.67252 1.16374 3.33404 1.6397L8.09301 5.06375" stroke="white" stroke-width="2"/>
+                                </svg>                                
+                            </div>
+                        </div>
+                        <img src="images/dist/series/7.png" alt="">
+                        <div class="series__body-box-item-text">
+                            <p class="op">Радио</p>
+                            <div class="series__body-box-item-text-soft">
+                                <span>Сезон 1</span>
+                                <span>Серия 1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="series__body-box-item">
+                        <div class="blur">
+                            <div class="circle">
+                                <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3899 8.18875L17.8352 12.19C18.3806 12.5908 18.3786 13.4064 17.8312 13.8046L3.33817 24.345C2.6772 24.8257 1.75 24.3535 1.75 23.5362L1.75 2.45143C1.75 1.63648 2.67252 1.16374 3.33404 1.6397L8.09301 5.06375" stroke="white" stroke-width="2"/>
+                                </svg>                                
+                            </div>
+                        </div>
+                        <img src="images/dist/series/8.png" alt="">
+                        <div class="series__body-box-item-text">
+                            <p class="op">Начало</p>
+                            <div class="series__body-box-item-text-soft">
+                                <span>Сезон 1</span>
+                                <span>Серия 1</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="series__body-box none" data-tab="3">
+                    <div class="series__body-box-item">
+                        <div class="blur">
+                            <div class="circle">
+                                <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3899 8.18875L17.8352 12.19C18.3806 12.5908 18.3786 13.4064 17.8312 13.8046L3.33817 24.345C2.6772 24.8257 1.75 24.3535 1.75 23.5362L1.75 2.45143C1.75 1.63648 2.67252 1.16374 3.33404 1.6397L8.09301 5.06375" stroke="white" stroke-width="2"/>
+                                </svg>                                
+                            </div>
+                        </div>
+                        <img src="images/dist/series/1.png" alt="">
+                        <div class="series__body-box-item-text">
+                            <p class="op">Конец</p>
+                            <div class="series__body-box-item-text-soft">
+                                <span>Сезон 1</span>
+                                <span>Серия 1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="series__body-box-item">
+                        <div class="blur">
+                            <div class="circle">
+                                <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3899 8.18875L17.8352 12.19C18.3806 12.5908 18.3786 13.4064 17.8312 13.8046L3.33817 24.345C2.6772 24.8257 1.75 24.3535 1.75 23.5362L1.75 2.45143C1.75 1.63648 2.67252 1.16374 3.33404 1.6397L8.09301 5.06375" stroke="white" stroke-width="2"/>
+                                </svg>                                
+                            </div>
+                        </div>
+                        <img src="images/dist/series/2.png" alt="">
+                        <div class="series__body-box-item-text">
+                            <p class="op">Цель</p>
+                            <div class="series__body-box-item-text-soft">
+                                <span>Сезон 1</span>
+                                <span>Серия 1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="series__body-box-item">
+                        <div class="blur">
+                            <div class="circle">
+                                <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3899 8.18875L17.8352 12.19C18.3806 12.5908 18.3786 13.4064 17.8312 13.8046L3.33817 24.345C2.6772 24.8257 1.75 24.3535 1.75 23.5362L1.75 2.45143C1.75 1.63648 2.67252 1.16374 3.33404 1.6397L8.09301 5.06375" stroke="white" stroke-width="2"/>
+                                </svg>                                
+                            </div>
+                        </div>
+                        <img src="images/dist/series/3.png" alt="">
+                        <div class="series__body-box-item-text">
+                            <p class="op">Голова</p>
+                            <div class="series__body-box-item-text-soft">
+                                <span>Сезон 1</span>
+                                <span>Серия 1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="series__body-box-item">
+                        <div class="blur">
+                            <div class="circle">
+                                <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3899 8.18875L17.8352 12.19C18.3806 12.5908 18.3786 13.4064 17.8312 13.8046L3.33817 24.345C2.6772 24.8257 1.75 24.3535 1.75 23.5362L1.75 2.45143C1.75 1.63648 2.67252 1.16374 3.33404 1.6397L8.09301 5.06375" stroke="white" stroke-width="2"/>
+                                </svg>                                
+                            </div>
+                        </div>
+                        <img src="images/dist/series/4.png" alt="">
+                        <div class="series__body-box-item-text">
+                            <p class="op">Упыри</p>
+                            <div class="series__body-box-item-text-soft">
+                                <span>Сезон 1</span>
+                                <span>Серия 1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="series__body-box-item">
+                        <div class="blur">
+                            <div class="circle">
+                                <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3899 8.18875L17.8352 12.19C18.3806 12.5908 18.3786 13.4064 17.8312 13.8046L3.33817 24.345C2.6772 24.8257 1.75 24.3535 1.75 23.5362L1.75 2.45143C1.75 1.63648 2.67252 1.16374 3.33404 1.6397L8.09301 5.06375" stroke="white" stroke-width="2"/>
+                                </svg>                                
+                            </div>
+                        </div>
+                        <img src="images/dist/series/5.png" alt="">
+                        <div class="series__body-box-item-text">
+                            <p class="op">Прошлое</p>
+                            <div class="series__body-box-item-text-soft">
+                                <span>Сезон 1</span>
+                                <span>Серия 1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="series__body-box-item">
+                        <div class="blur">
+                            <div class="circle">
+                                <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3899 8.18875L17.8352 12.19C18.3806 12.5908 18.3786 13.4064 17.8312 13.8046L3.33817 24.345C2.6772 24.8257 1.75 24.3535 1.75 23.5362L1.75 2.45143C1.75 1.63648 2.67252 1.16374 3.33404 1.6397L8.09301 5.06375" stroke="white" stroke-width="2"/>
+                                </svg>                                
+                            </div>
+                        </div>
+                        <img src="images/dist/series/6.png" alt="">
+                        <div class="series__body-box-item-text">
+                            <p class="op">Ловушка</p>
+                            <div class="series__body-box-item-text-soft">
+                                <span>Сезон 1</span>
+                                <span>Серия 1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="series__body-box-item">
+                        <div class="blur">
+                            <div class="circle">
+                                <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3899 8.18875L17.8352 12.19C18.3806 12.5908 18.3786 13.4064 17.8312 13.8046L3.33817 24.345C2.6772 24.8257 1.75 24.3535 1.75 23.5362L1.75 2.45143C1.75 1.63648 2.67252 1.16374 3.33404 1.6397L8.09301 5.06375" stroke="white" stroke-width="2"/>
+                                </svg>                                
+                            </div>
+                        </div>
+                        <img src="images/dist/series/7.png" alt="">
+                        <div class="series__body-box-item-text">
+                            <p class="op">Радио</p>
+                            <div class="series__body-box-item-text-soft">
+                                <span>Сезон 1</span>
+                                <span>Серия 1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="series__body-box-item">
+                        <div class="blur">
+                            <div class="circle">
+                                <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3899 8.18875L17.8352 12.19C18.3806 12.5908 18.3786 13.4064 17.8312 13.8046L3.33817 24.345C2.6772 24.8257 1.75 24.3535 1.75 23.5362L1.75 2.45143C1.75 1.63648 2.67252 1.16374 3.33404 1.6397L8.09301 5.06375" stroke="white" stroke-width="2"/>
+                                </svg>                                
+                            </div>
+                        </div>
+                        <img src="images/dist/series/8.png" alt="">
+                        <div class="series__body-box-item-text">
+                            <p class="op">Начало</p>
+                            <div class="series__body-box-item-text-soft">
+                                <span>Сезон 1</span>
+                                <span>Серия 1</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="information">
+        <div class="container">
+            <div class="information__body">
+                <div class="information__body-item">
+                    <span>Разработка</span>
+                    <p class="op">В июле 2020 года стало известно, что компания Amazon Studios занимается разработкой телевизионной адаптации серии видеоигр Fallout под руководством Лизы Джой и Джонатана Нолана. В августе 2021 года Джой описала сериал как «эксцентричный, сумасшедший, забавный, приключенческий и умопомрачительный, какого вы ещё не видели».
+                        <br>В январе 2022 года стало известно, что шоураннерами сериала стали Дженива Робертсон-Дуорет и Грэм Вагнер.</p>
+                </div>
+                <div class="information__body-item">
+                    <span>Подбор актёров</span>
+                    <p class="op">В феврале 2022 года на одну из главных ролей в проекте был утверждён Уолтон Гоггинс. В следующем месяце стало известно, что в проекте снимется Элла Пернелл. В июне 2022 года к основному актёрскому составу присоединились Кайл Маклахлен, Кселия Мендес-Джонс и Аарон Мотен. В октябре 2023 года стало известно, что в сериале также снялись Сарита Чоудхури, Майкл Эмерсон, Лесли Аггамс и Зак Черри.</p>
+                </div>
+                <div class="information__body-item">
+                    <span>Съёмки</span>
+                    <p class="op">Стюарт Драйберг и Теодоро Маньячи были утверждены в качестве операторов. Съёмки первого сезона начались 5 июля 2022 года, они прошли в штатах Нью-Йорк, Нью-Джерси и Юта.</p>
+                </div>
+                <div class="information__body-item">
+                    <span>Премьера</span>
+                    <p class="op">Премьера всех восьми эпизодов первого сезона состоялась 10 апреля 2024 года.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="graphic">
+        <div class="container">
+            <div class="graphic__body">
+                <h2 class="graphic__body-title">
+                    График выхода новых серий
+                </h2>
+                <div class="graphic__body-box">
+                    <div class="graphic__body-box-item">
+                        <img src="images/dist/grap__img.png" alt="">
+                        <div class="graphic__body-box-item-text">
+                            <span class="op">Мудрость пожилых</span>
+                            <p class="op">Wisdom of the Ages</p>
+                        </div>
+                        <div class="graphic__body-box-item-date">
+                            <div class="">
+                                <span class="op">12 ноября 2023</span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9 3.57H17C19.7614 3.57 22 5.80858 22 8.57V17.57C22 20.3314 19.7614 22.57 17 22.57H7C5.67392 22.57 4.40215 22.0432 3.46447 21.1055C2.52678 20.1679 2 18.8961 2 17.57V8.57C2 5.80858 4.23858 3.57 7 3.57H7.1V1.75C7.1 1.33579 7.43579 1 7.85 1C8.26421 1 8.6 1.33579 8.6 1.75V3.57H15.4V1.75C15.4 1.33579 15.7358 1 16.15 1C16.5642 1 16.9 1.33579 16.9 1.75V3.57ZM7.5 9.66H16.5C16.9142 9.66 17.25 9.32421 17.25 8.91C17.25 8.49579 16.9142 8.16 16.5 8.16H7.5C7.08579 8.16 6.75 8.49579 6.75 8.91C6.75 9.32421 7.08579 9.66 7.5 9.66Z" fill="#7F8A96"/>
+                                </svg>                                
+                            </div>
+                            <p class="op">Серия 4</p>
+                        </div>
+                    </div>
+                    <div class="graphic__body-box-item">
+                        <img src="images/dist/grap__img.png" alt="">
+                        <div class="graphic__body-box-item-text">
+                            <span class="op">Мудрость пожилых</span>
+                            <p class="op">Wisdom of the Ages</p>
+                        </div>
+                        <div class="graphic__body-box-item-date">
+                            <div class="">
+                                <span class="op">12 ноября 2023</span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9 3.57H17C19.7614 3.57 22 5.80858 22 8.57V17.57C22 20.3314 19.7614 22.57 17 22.57H7C5.67392 22.57 4.40215 22.0432 3.46447 21.1055C2.52678 20.1679 2 18.8961 2 17.57V8.57C2 5.80858 4.23858 3.57 7 3.57H7.1V1.75C7.1 1.33579 7.43579 1 7.85 1C8.26421 1 8.6 1.33579 8.6 1.75V3.57H15.4V1.75C15.4 1.33579 15.7358 1 16.15 1C16.5642 1 16.9 1.33579 16.9 1.75V3.57ZM7.5 9.66H16.5C16.9142 9.66 17.25 9.32421 17.25 8.91C17.25 8.49579 16.9142 8.16 16.5 8.16H7.5C7.08579 8.16 6.75 8.49579 6.75 8.91C6.75 9.32421 7.08579 9.66 7.5 9.66Z" fill="#7F8A96"/>
+                                </svg>                                
+                            </div>
+                            <p class="op">Серия 4</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="comment">
+        <div class="container">
+            <div class="comment__body">
+                <div class="comment__body-title">
+                    <h2>Последние комментарии</h2>
+                    <span>3</span>
+                </div>
+                <div class="comment__body-box">
+                    <div class="comment__body-box-item">
+                        <div class="comment__body-box-item-user">
+                            <img src="images/dist/user__comm.png" alt="">
+                            <span class="op">Оксаночка</span>
+                            <p class="op">19.08.2023</p>
+                        </div>
+                        <p class="comment__body-box-item-text op">
+                            Мы увидим стандартных (как поначалу кажется) супергероев с различными сверхспособностями.
+                            <br>Их существование - давно уже не тайна для широкой общественности.
+                            <br>А так называемая "Большая семерка" суперов - костяк новой нации, ведет публичный образ жизни, постоянно выполняя разнообразные миссии, работает на масс-маркет, рекламируя товары и регулируя общественное мнение. 
+                            <br><br>
+                            <br>И совсем не все просто в мире суперменов, они развращены миром капитала.
+                            И любое добро неминуемо влечет за собой зло...
+                        </p>
+                        <button class="comment__body-box-item-answer op">
+                            Ответить
+                        </button>
+                    </div>
+                    <div class="comment__body-box-item">
+                        <div class="comment__body-box-item-user">
+                            <img src="images/dist/user__comm.png" alt="">
+                            <span class="op">Дэн</span>
+                            <p class="op">19.08.2023</p>
+                        </div>
+                        <p class="comment__body-box-item-text op">
+                            Да, это не совсем то, чего я ждал и снят этот сериал по ненавистным мне комиксам (DC). Но он другой, правильный что-ли. Тут суперы показаны не безупречными во всем, а допускающими роковые ошибки, обнаглевшими, зазнавшимися, бесполезными для реального общества и ведомыми собственными "продюссерами". Все так, как должно быть.
+                        </p>
+                        <button class="comment__body-box-item-answer op">
+                            Ответить
+                        </button>
+                    </div>
+                    <div class="comment__body-box-item">
+                        <div class="comment__body-box-item-user">
+                            <img src="images/dist/user__comm.png" alt="">
+                            <span class="op">Степан</span>
+                            <p class="op">19.08.2023</p>
+                        </div>
+                        <p class="comment__body-box-item-text op">
+                            Первый сезон сериала "Пацаны" был обречен на успех, поэтому еще до его премьеры сериал был продлен на второй. Говорит ли это о чем-то? Ну конечно же да. Все 8 имеющихся серий я посмотрел с большим удовольствием и с таким же буду ждать продолжения. Было интересно, необычно и весело. Последнее во многом благодаря угарному правильному переводу от студии "Кубик в Кубе".
+                        </p>
+                        <button class="comment__body-box-item-answer op">
+                            Ответить
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
     <footer class="footer">
         <div class="footer__body">
             <div class="footer__body-logo">
                 <a href="">
-                    <img src="../images/dist/footer__logo.png" alt="">
+                    <img src="images/dist/footer__logo.png" alt="">
                 </a>
             </div>
             <nav class="footer__body-menu">
                 <ul class="footer__body-menu-links">
                     <li class="footer__body-menu-links-item">
-                        <a href="">Главная</a>
+                        <a class="hover" href="main.html">Главная</a>
                     </li>
-                    <li class="footer__body-menu-links-item">
-                        <a href="">
+                    <li class="header__body-menu-links-item acc">
+                        <div class="hover">
                             Выбрать сезон
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M18.6449 9C18.3619 9 18.079 9.07964 17.8631 9.23946L12.75 13.025L7.63692 9.23946C7.20512 8.92036 6.5051 8.92036 6.0733 9.23946C5.64223 9.5591 5.64223 10.0773 6.0733 10.3969L11.9682 14.7607C12.4 15.0798 13.1 15.0798 13.5318 14.7607L19.4267 10.3969C19.8578 10.0773 19.8578 9.5591 19.4267 9.23946C19.2108 9.07964 18.9278 9 18.6449 9Z"
-                                    fill="white" />
-                            </svg>
-                        </a>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.6449 9C18.3619 9 18.079 9.07964 17.8631 9.23946L12.75 13.025L7.63692 9.23946C7.20512 8.92036 6.5051 8.92036 6.0733 9.23946C5.64223 9.5591 5.64223 10.0773 6.0733 10.3969L11.9682 14.7607C12.4 15.0798 13.1 15.0798 13.5318 14.7607L19.4267 10.3969C19.8578 10.0773 19.8578 9.5591 19.4267 9.23946C19.2108 9.07964 18.9278 9 18.6449 9Z" fill="white"/>
+                            </svg>                                
+                        </div>
+                        <div class="header__body-menu-links-item-acc">
+                            <a href="" class="op">1 сезон</a>
+                            <a href="" class="op">2 сезон</a>
+                            <a href="" class="op">3 сезон</a>
+                        </div>
                     </li>
                     <li class="footer__body-menu-links-item">
-                        <a href="">Актёры</a>
+                        <a class="hover" href="actor.html">Актёры</a>
                     </li>
                     <li class="footer__body-menu-links-item">
-                        <a href="">Новости</a>
+                        <a class="hover" href="news.html">Новости</a>
                     </li>
                     <li class="footer__body-menu-links-item">
-                        <a href="">«Иерихон»</a>
+                        <a class="hover" href="">«Иерихон»</a>
                     </li>
                 </ul>
             </nav>
@@ -233,11 +791,11 @@
         </div>
     </footer>
     <button class="sc__top">
-        <img src="../images/dist/scroll__top.png" alt="">
+        <img src="images/dist/scroll__top.png" alt="">
     </button>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="../js/main.min.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>

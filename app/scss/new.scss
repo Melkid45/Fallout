@@ -46,7 +46,7 @@
                 position: relative;
                 background: #222930;
                 cursor: pointer;
-                transition: all 0.5s ease;
+                transition: all 0.3s ease;
                 &-top{
                     width: 630px;
                     height: 249px;
@@ -72,7 +72,7 @@
                         color: var(--white);
                         z-index: 10;
                         position: relative;
-                        transition: all 0.5s ease;
+                        transition: all 0.3s ease;
                     }
                 }
                 &-bot{
@@ -91,7 +91,7 @@
                             line-height: 21.79px;
                             text-align: center;
                             color: var(--gray);
-                            transition: all 0.5s ease;
+                            transition: all 0.3s ease;
                         }
                         svg{
                             width: 24px;

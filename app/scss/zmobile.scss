@@ -1,9 +1,14 @@
-@media (max-width:1440px) {
+@media (max-width:960px) {
     html{
-        font-size: calc(100vw / 1440);
+        font-size: calc(100vw / 480);
     }
 
-
+    .desk{
+        display: none !important;
+    }
+    .mob{
+        display: flex !important;
+    }
     :root{
         --yellow: #FFD337;
         --white: #FFFFFF;
@@ -36,7 +41,7 @@
         overflow: hidden;
     }
     .container{
-        max-width: 1280rem;
+        max-width: 440rem;
         margin: 0 auto;
         width: 100%;
     }
@@ -46,7 +51,7 @@
         height: 64rem;
         position: fixed;
         bottom: 100rem;
-        right: 300rem;
+        right: 30rem;
         background: transparent;
         opacity: 0;
         transition: all 0.3s ease;
@@ -75,12 +80,12 @@
 
     .actor{
         width: 100%;
-        margin-top: 60rem;
+        margin-top: 40rem;
         &__body{
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 40rem;
+            gap: 20rem;
             &-title{
                 font-size: 26rem;
                 font-weight: 400;
@@ -92,20 +97,24 @@
                 display: flex;
                 align-items: center;
                 gap: 10rem;
+                max-width: 440rem;
+                overflow: auto;
                 &-item{
                     display: flex;
                     position: relative;
                     padding: 0rem 10rem 20rem 10rem;
                     align-items: flex-end;
                     justify-content: center;
-                    width: 247rem;
-                    height: 370rem;
+                    width: 180rem;
+                    height: 260rem;
+                    min-width: 180rem;
+                    min-height: 260rem;
                     border-radius: 6rem;
                     transition: all 0.3s ease;
                     cursor: pointer;
                     img{
-                        width: 247rem;
-                        height: 370rem;
+                        width: 180rem;
+                        height: 260rem;
                         position: absolute;
                         top: 0;
                         left: 0;
@@ -152,8 +161,8 @@
 
     .card{
         width: 100%;
-        margin-top: 20rem;
-        padding-bottom: 60rem;
+        margin-top: 10rem;
+        padding-bottom: 40rem;
         &__body{
             display: flex;
             flex-direction: column;
@@ -183,19 +192,23 @@
                 align-items: center;
                 gap: 60rem;
                 &-news{
-                    width: 1280rem;
+                    width: 440rem;
                     border-radius: 6rem;
                     background: #2B3035;
                     display: flex;
-                    height: 249rem;
-                    justify-content: space-between;
+                    min-height: 448rem;
+                    justify-content: flex-start;
+                    flex-direction: column;
                     &-left{
                         display: flex;
                         align-items: flex-end;
+                        justify-content: flex-end;
                         padding: 16rem;
                         position: relative;
+                        width: 440rem;
+                        height: 249rem;
                         img{
-                            width: 521rem;
+                            width: 440rem;
                             height: 249rem;
                             position: absolute;
                             left: 0;
@@ -211,10 +224,11 @@
                             color: var(--yellow);
                             position: relative;
                             z-index: 10;
-                            width: 489rem;
+                            width: auto;
                         }
                     }
                     &-right{
+                        justify-self: flex-end;
                         padding: 20rem;
                         display: flex;
                         align-items: flex-end;
@@ -249,7 +263,7 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    gap: 30rem;
+                    gap: 40rem;
                     &-title{
                         font-size: 26rem;
                         font-weight: 400;
@@ -259,9 +273,11 @@
                     }
                     &-main{
                         display: flex;
+                        flex-direction: column;
+                        align-items: center;
                         gap: 30rem;
                         img{
-                            width: 630.5rem;
+                            width: 440rem;
                             height: 350rem;
                         }
                         p{
@@ -278,8 +294,8 @@
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    padding: 23rem 0;
-                    width: 620rem;
+                    padding: 21rem 0;
+                    width: 440rem;
                     background: #29282E;
                     margin-top: -30rem;
                     img{
@@ -287,12 +303,12 @@
                         height: 80rem;
                     }
                     p{
-                        font-size: 18rem;
+                        font-size: 16rem;
                         font-weight: 400;
-                        line-height: 24.51rem;
+                        line-height: 21rem;
                         text-align: center;
                         color: var(--white);
-                        max-width: 570rem;
+                        max-width: 393rem;
                         span{
                             color: var(--blue);
                         }
@@ -409,13 +425,13 @@
     .footer{
         width: 100%;
         background: var(--dark-blue);
-        padding: 60rem 0rem;
+        padding: 40rem 0rem;
         &__body{
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 100%;
-            gap: 88rem;
+            gap: 40rem;
             &-logo{
                 width: 100%;
                 height: auto;
@@ -433,13 +449,15 @@
                 }
             }
             &-menu{
-                max-width: 884rem;
+                max-width: 100%;
                 width: 100%;
                 &-links{
                     width: 100%;
                     display: flex;
                     align-items: center;
-                    justify-content: space-between;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 20rem;
                     &-item{
                         padding: 8rem 16rem;
                         background: transparent;
@@ -469,7 +487,7 @@
                 font-size: 16rem;
                 font-weight: 400;
                 line-height: 21.79rem;
-                text-align: left;
+                text-align: center;
                 color: var(--white);
             }
         }
@@ -478,8 +496,8 @@
 
     .form{
         width: 100%;
-        padding: 60rem 0;
-        margin-top: 60rem;
+        padding: 40rem 0;
+        margin-top: 40rem;
         background: #0C0D0E;
         &__body{
             display: flex;
@@ -501,9 +519,10 @@
                 &-top{
                     display: flex;
                     align-items: center;
+                    flex-direction: column;
                     gap: 20rem;
                     input{
-                        width: 393.5rem;
+                        width: 440rem;
                         height: 50rem;
                         padding-left: 14rem;
                         border-radius: 6rem;
@@ -521,7 +540,7 @@
                     align-items: center;
                     gap: 30rem;
                     textarea{
-                        width: 807rem;
+                        width: 440rem;
                         height: 201rem;
                         padding-left: 14rem;
                         padding-top: 14rem;
@@ -538,16 +557,18 @@
                         display: flex;
                         align-items: center;
                         gap: 30rem;
+                        flex-direction: column;
+                        gap: 30rem;
                         p{
-                            font-size: 16rem;
+                            font-size: 12rem;
                             font-weight: 400;
-                            line-height: 21.79rem;
+                            line-height: 16rem;
                             text-align: left;
                             max-width: 548rem;
                             color: var(--gray);
                         }
                         &-btn{
-                            width: 229rem;
+                            width: 100%;
                             height: 78rem;
                             border-radius: 6rem;
                             background: var(--blue);
@@ -570,11 +591,11 @@
             }
         }
     }
-
+    
 
     .graphic{
         width: 100%;
-        margin-top: 60rem;
+        margin-top: 40rem;
         &__body{
             display: flex;
             flex-direction: column;
@@ -597,18 +618,20 @@
                     border-radius: 6rem;
                     display: flex;
                     align-items: center;
-                    justify-content: space-between;
-                    width: 1280rem;
+                    justify-content: flex-start;
+                    flex-direction: column;
+                    gap: 10rem;
+                    width: 440rem;
                     img{
-                        width: 238rem;
-                        height: 100rem;
+                        width: 400rem;
+                        height: 190rem;
                         border-radius: 6rem;
                     }
                     &-text{
                         display: flex;
                         flex-direction: column;
                         gap: 10rem;
-                        width: 619rem;
+                        width: 400rem;
                         span{
                             font-size: 20rem;
                             font-weight: 700;
@@ -628,7 +651,7 @@
                         display: flex;
                         flex-direction: column;
                         gap: 10rem;
-                        width: 289rem;
+                        width: 400rem;
                         div{
                             display: flex;
                             align-items: center;
@@ -661,11 +684,14 @@
 
     .header{
         width: 100%;
-        padding: 8rem 0;
+        padding: 15rem 20rem;
+        position: relative;
         &__body{
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20rem;
             width: 100%;
             &-logo{
                 width: 118rem;
@@ -679,7 +705,8 @@
                 &-links{
                     display: flex;
                     align-items: center;
-                    gap: 93.75rem;
+                    flex-direction: column;
+                    gap: 50rem;
                     width: 100%;
                     &-item{
                         padding: 8rem 16rem;
@@ -694,7 +721,7 @@
                             display: flex;
                             align-items: center;
                             gap: 10rem;
-                            font-size: 18rem;
+                            font-size: 24rem;
                             font-weight: 400;
                             line-height: 21.96rem;
                             text-align: left;
@@ -705,7 +732,7 @@
                             display: flex;
                             align-items: center;
                             gap: 10rem;
-                            font-size: 18rem;
+                            font-size: 24rem;
                             font-weight: 400;
                             line-height: 21.96rem;
                             text-align: left;
@@ -717,7 +744,7 @@
                             display: flex;
                             flex-direction: column;
                             align-items: center;
-                            position: absolute;
+                            position: static;
                             top: 35rem;
                             background: #282F36;
                             border-bottom-left-radius: 6rem;
@@ -734,7 +761,7 @@
                             }
                             a{
                                 padding: 12rem 16rem;
-                                font-size: 16rem;
+                                font-size: 24rem;
                                 font-weight: 400;
                                 line-height: 21.79rem;
                                 text-align: center;
@@ -752,16 +779,64 @@
                             }
                         }
                     }
-                    &-item:hover{
-                        .hover{
-                            color: var(--yellow);
-                        }
-                        div{
-                            color: var(--yellow);
-                        }
-                        background: var(--hover-link);
+                }
+            }
+        }
+        &__mobile{
+            &-top{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                gap: 124rem;
+                width: 100%;
+                &-logo{
+                    width: 92rem;
+                    height: 50rem;
+                    img{
+                        width: 92rem;
+                        height: 50rem;
                     }
                 }
+                .burger{
+                    width: 40rem;
+                    height: 40rem;
+                    cursor: pointer;
+                    svg{
+                        width: 40rem;
+                        height: 40rem;
+                    }
+                }
+            }
+            &-bot{
+                position: absolute;
+                width: 100%;
+                height: 100vh;
+                background: #1B1E21;
+                top: 0;
+                left: 0;
+                z-index: 1000;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 40rem;
+                transition: all 0.5s ease;
+                translate: -100% 0;
+                .close{
+                    width: 40rem;
+                    height: 40rem;
+                    background: transparent;
+                    position: absolute;
+                    top: 10rem;
+                    right: 16rem;
+                    svg{
+                        width: 40rem;
+                        height: 40rem;
+                    }
+                }
+            }
+            &-bot.open{
+                translate: 0 0;
             }
         }
     }
@@ -770,13 +845,13 @@
 
     .info{
         width: 100%;
-        padding: 40rem;
+        padding: 20rem;
         background: #0C0D0E;
         &__body{
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 40rem;
+            gap: 20rem;
             &-title{
                 font-size: 26rem;
                 font-weight: 400;
@@ -786,7 +861,9 @@
             }
             &-box{
                 display: flex;
-                justify-content: space-between;
+                justify-content: flex-start;
+                flex-direction: column;
+                gap: 20rem;
                 width: 100%;
                 &-char{
                     width: 100%;
@@ -861,8 +938,8 @@
                     }
                 }
                 img{
-                    width: 305rem;
-                    height: 419rem;
+                    width: 440rem;
+                    height: 530rem;
                 }
             }
         }
@@ -903,13 +980,13 @@
 
     .main{
         width: 100%;
-        margin-top: 65rem;
-        padding-bottom: 110rem;
+        margin-top: 10rem;
+        padding-bottom: 0rem;
         &__body{
             display: flex;
             width: 100%;
             align-items: flex-start;
-            justify-content: space-between;
+            flex-direction: column;
             &-start{
                 display: flex;
                 flex-direction: column;
@@ -978,7 +1055,7 @@
                 &-btn{
                     background: url(../images/dist/btn__back.png) center no-repeat;
                     background-size: cover;
-                    width: 304rem;
+                    width: 100%;
                     height: 78rem;
                     border-radius: 6rem;
                     display: flex;
@@ -1001,9 +1078,11 @@
             }
             &-end{
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
                 align-items: flex-end;
-                max-width: 220rem;
+                max-width: none;
+                justify-content: space-between;
+                width: 100%;
                 &-title{
                     font-size: 18rem;
                     font-weight: 400;
@@ -1062,6 +1141,7 @@
                     }
                 }
                 &-watch{
+                    order: -1;
                     margin-top: 40rem;
                     display: flex;
                     flex-direction: column;
@@ -1089,14 +1169,19 @@
             }
         }
     }
-    
+    .wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10rem;
+    }
     .main__wrap{
         position: relative;
     }
     .m__img{
         position: absolute;
-        width: 1440rem;
-        height: 720rem;
+        width: 480rem;
+        height: 550rem;
         top: 0;
         left: 0;
         z-index: -1;
@@ -1106,8 +1191,8 @@
 
     .new{
         width: 100%;
-        margin-top: 20rem;
-        padding-bottom: 60rem;
+        margin-top: 10rem;
+        padding-bottom: 40rem;
         &__body{
             display: flex;
             flex-direction: column;
@@ -1144,7 +1229,7 @@
                 margin-top: 10rem;
                 gap: 20rem;
                 &-item{
-                    width: 630rem;
+                    width: 440rem;
                     border-radius: 6rem;
                     display: flex;
                     flex-direction: column;
@@ -1154,7 +1239,7 @@
                     cursor: pointer;
                     transition: all 0.3s ease;
                     &-top{
-                        width: 630rem;
+                        width: 440rem;
                         height: 249rem;
                         position: relative;
                         padding: 16rem;
@@ -1251,7 +1336,9 @@
             }
             &-box{
                 display: flex;
-                gap: 20rem;
+                gap: 10rem;
+                max-width: 440rem;
+                overflow: auto;
                 &-item{
                     width: 413rem;
                     display: flex;
@@ -1381,6 +1468,9 @@
                 &-actor{
                     display: flex;
                     gap: 20rem;
+                    flex-direction: column;
+                    gap: 20rem;
+                    align-items: center;
                     img{
                         width: 280rem;
                         height: 390rem;
@@ -1408,6 +1498,7 @@
                             display: flex;
                             align-items: center;
                             gap: 20rem;
+                            flex-wrap: wrap;
                             span{
                                 padding: 4rem 13rem;
                                 border-radius: 6rem;
@@ -1467,8 +1558,8 @@
                     align-items: center;
                     justify-content: center;
                     img{
-                        width: 266rem;
-                        height: 320rem;
+                        width: 110rem;
+                        height: 188rem;
                     }
                 }
             }
@@ -1480,8 +1571,9 @@
         position: relative;
     }
     .a__img{
+        display: none;
         position: absolute;
-        width: 1440rem;
+        width: 440rem;
         height: 1104rem;
         top: 0;
         left: 0;
@@ -1492,8 +1584,8 @@
 
     .people{
         width: 100%;
-        margin-top: 40rem;
-        padding-bottom: 60rem;
+        margin-top: 10rem;
+        padding-bottom: 40rem;
         &__body{
             display: flex;
             flex-direction: column;
@@ -1532,20 +1624,29 @@
                 &-item{
                     display: flex;
                     align-items: center;
+                    flex-wrap: wrap;
                     justify-content: space-between;
-                    width: 1280rem;
+                    width: 440rem;
                     height: auto;
                     border-radius: 6rem;
                     cursor: pointer;
                     img{
-                        width: 246rem;
-                        height: 362rem;
+                        width: 215rem;
+                        height: 280rem;
+                    }
+                    img:nth-child(1){
+                        order: -1;
+                    }
+                    img:nth-child(3){
+                        order: -1;
                     }
                     &-text{
                         display: flex;
                         flex-direction: column;
                         align-items: center;
                         gap: 20rem;
+                        width: 100%;
+                        padding-bottom: 10rem;
                         &-block{
                             display: flex;
                             flex-direction: column;
@@ -1590,7 +1691,7 @@
 
     .player{
         width: 100%;
-        margin-top: 20rem;
+        margin-top: 10rem;
         &__body{
             display: flex;
             flex-direction: column;
@@ -1619,7 +1720,6 @@
             }
             &-title{
                 width: 100%;
-                font-family: Impact;
                 font-size: 26rem;
                 font-weight: 400;
                 line-height: 31.71rem;
@@ -1631,6 +1731,8 @@
                 align-items: center;
                 gap: 70rem;
                 margin-top: 20rem;
+                max-width: 440rem;
+                overflow: auto;
                 span{
                     padding: 8rem 16rem;
                     border-radius: 4rem;
@@ -1641,6 +1743,7 @@
                     color: var(--white);
                     cursor: pointer;
                     transition: all 0.3s ease;
+                    white-space: nowrap;
                 }
     
                 span:hover{
@@ -1655,8 +1758,8 @@
             &-box{
                 margin-top: 20rem;
                 div{
-                    width: 1280rem;
-                    height: 722rem;
+                    width: 440rem;
+                    height: 362rem;
                     iframe{
                         width: 100%;
                         height: 100%;
@@ -1677,7 +1780,9 @@
             }
             &-do{
                 display: flex;
+                flex-wrap: wrap;
                 align-items: center;
+                justify-content: center;
                 gap: 20rem;
                 &-back{
                     display: flex;
@@ -1686,6 +1791,10 @@
                     padding: 16rem 32rem;
                     border-radius: 6rem;
                     background: #0C0D0E;
+                    width: 210rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     svg{
                         width: 20rem;
                         height: 20rem;
@@ -1701,6 +1810,12 @@
                         text-transform: uppercase;
                     }
                 }
+                button:nth-child(1){
+                    order: -1;
+                }
+                button:nth-child(3){
+                    order: -1;
+                }
                 &-next{
                     display: flex;
                     align-items: center;
@@ -1708,6 +1823,10 @@
                     padding: 16rem 32rem;
                     border-radius: 6rem;
                     background: #0C0D0E;
+                    width: 210rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     svg{
                         width: 20rem;
                         height: 20rem;
@@ -1731,6 +1850,10 @@
                     padding: 16rem 32rem;
                     border-radius: 6rem;
                     background: var(--blue);
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     svg{
                         width: 20rem;
                         height: 20rem;
@@ -1866,6 +1989,7 @@
                 }
                 &-rate{
                     display: flex;
+                    flex-direction: column;
                     gap: 20rem;
                     &-left{
                         display: flex;
@@ -1926,8 +2050,8 @@
     }
     .p__img{
         position: absolute;
-        width: 1440rem;
-        height: 940rem;
+        width: 480rem;
+        height: 1006rem;
         top: 0;
         left: 0;
         z-index: -1;
@@ -1937,22 +2061,24 @@
 
     .plot{
         width: 100%;
-        margin-top: 60rem;
-        padding-bottom: 60rem;
+        margin-top: 40rem;
+        padding-bottom: 40rem;
         &__body{
             display: flex;
             flex-direction: column;
-            gap: 60rem;
+            gap: 20rem;
             width: 100%;
             &-item{
                 display: flex;
+                flex-direction: column;
+                align-items: flex-start;
                 gap: 20rem;
                 &-text{
                     display: flex;
                     flex-direction: column;
-                    gap: 30rem;
-                    width: 630rem;
-                    padding-left: 30rem;
+                    gap: 20rem;
+                    width: 428rem;
+                    padding-left: 10rem;
                     height: max-content;
                     span{
                         font-size: 26rem;
@@ -1971,8 +2097,8 @@
                     }
                 }
                 img{
-                    width: 630rem;
-                    height: 490rem;
+                    width: 440rem;
+                    height: 380rem;
                 }
             }
             &-item:nth-child(1){
@@ -1982,6 +2108,8 @@
             }
             &-item:nth-child(2){
                 .plot__body-item-text{
+                    padding-left: 0;
+                    padding-right: 10rem;
                     border-right: 2rem solid var(--blue);
                 }
             }
@@ -1991,7 +2119,7 @@
 
     .season{
         width: 100%;
-        margin-top: 20rem;
+        margin-top: 10rem;
         &__body{
             display: flex;
             flex-direction: column;
@@ -2017,7 +2145,9 @@
             }
             &-box{
                 display: flex;
-                gap: 20rem;
+                flex-direction: column;
+                gap: 10rem;
+                align-items: center;
                 width: 100%;
                 img{
                     width: 305rem;
@@ -2029,8 +2159,10 @@
                     gap: 20rem;
                     &-social{
                         display: flex;
-                        align-items: center;
-                        justify-content: space-between;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        flex-direction: column;
+                        gap: 10rem;
                         width: 100%;
                         &-name{
                             font-size: 32rem;
@@ -2041,7 +2173,8 @@
                         }
                         &-block{
                             display: flex;
-                            align-items: center;
+                            align-items: flex-start;
+                            justify-content: space-between;
                             gap: 20rem;
                             &-item:nth-child(1){
                                 display: flex;
@@ -2144,8 +2277,10 @@
                     }
                     &-char{
                         display: flex;
-                        align-items: center;
-                        justify-content: space-between;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        flex-direction: column;
+                        gap: 20rem;
                         width: 100%;
                         &-start{
                             display: flex;
@@ -2217,8 +2352,8 @@
     }
     .s__img{
         position: absolute;
-        width: 1440rem;
-        height: 672rem;
+        width: 480rem;
+        height: 919rem;
         top: 0;
         left: 0;
         z-index: -1;
@@ -2233,7 +2368,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 40rem;
+            gap: 20rem;
             &-title{
                 font-size: 26rem;
                 font-weight: 400;
@@ -2269,9 +2404,9 @@
             &-box{
                 display: flex;
                 flex-wrap: wrap;
-                gap: 20rem;
+                gap: 10rem;
                 &-item{
-                    width: 305rem;
+                    width: 215rem;
                     height: 200rem;
                     position: relative;
                     padding: 10rem;
@@ -2283,7 +2418,7 @@
                     img{
                         position: absolute;
                         top: 0;
-                        width: 305rem;
+                        width: 215rem;
                         height: 200rem;
                         z-index: 5;
                         left: 0;
@@ -2320,7 +2455,7 @@
                     .blur{
                         position: absolute;
                         z-index: 7;
-                        width: 305rem;
+                        width: 215rem;
                         height: 200rem;
                         background: #00000080;
                         top: 0;

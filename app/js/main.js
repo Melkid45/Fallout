@@ -1,6 +1,6 @@
 SmoothScroll({
     // Время скролла 400 = 0.4 секунды
-    animationTime    : 800,
+    animationTime    : 400,
     // Размер шага в пикселях 
     stepSize         : 45,
 
@@ -89,3 +89,47 @@ window.addEventListener('scroll', function () {
         document.querySelector('.sc__top').classList.remove('active')
     }
 });
+
+document.querySelectorAll(".acc").forEach((el) => {
+    el.addEventListener('click', ()=> {
+        let cont = el.querySelector('.header__body-menu-links-item-acc');
+        let con = cont.parentNode;
+        if (cont.style.maxHeight) {
+            document.querySelectorAll('.header__body-menu-links-item-acc').forEach((el)=> el.style.maxHeight = null)
+            document.querySelectorAll('.acc').forEach((el)=> el.classList.remove('open'))
+        } else {
+            document.querySelectorAll('.header__body-menu-links-item-acc').forEach((el)=> el.style.maxHeight = null)
+            document.querySelectorAll('.acc').forEach((el)=> el.classList.remove('open'))
+            con.classList.add('open')
+            cont.style.maxHeight = cont.scrollHeight + 'px';
+        }
+    })
+})
+
+
+
+jQuery(function($){
+	$(document).mouseup( function(e){
+        if (!$('.menu__btn-open').is(e.target) && $('.menu__btn-open').has(e.target).length=== 0){
+            if (!$('.footer__menu').is(e.target) && $('.footer__menu').has(e.target).length=== 0){
+                
+            }
+        }else if ($('.closest__list-menu').is(e.target) && $('.closest__list-menu').has(e.target).length=== 0){
+            
+        }
+        else{
+            
+        }
+    });
+});
+
+$('.header').on('click', function(e){
+    if ($('.burger').is(e.target) || $('.burger svg').is(e.target) || $('.burger svg path').is(e.target)){
+        $('.header__mobile-bot').addClass('open')
+        $('body').addClass('hidden')
+    }else if ($('.close').is(e.target) || $('.close svg').is(e.target) || $('.close svg path').is(e.target)){
+        $('.header__mobile-bot').removeClass('open')
+        $('body').removeClass('hidden')
+    }
+})
+
